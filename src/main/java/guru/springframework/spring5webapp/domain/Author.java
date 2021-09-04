@@ -10,11 +10,15 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
+    @Column
     private String firstName;
+
+    @Column
     private String lastName;
 
-    @ManyToMany(mappedBy = "books")
-    Set<Book> books = new HashSet<>();
+    @ManyToMany(mappedBy = "authors")
+     private Set<Book> books = new HashSet<>();
 
     public Author() {
     }
