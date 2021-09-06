@@ -10,11 +10,7 @@ public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    @Column
-    private String title;
-
-    @Column
+    public String title;
     private String isbn;
 
     @ManyToMany
