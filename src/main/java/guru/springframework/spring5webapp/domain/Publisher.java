@@ -10,7 +10,6 @@ public class Publisher {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @Column
     private String name;
     private String address1;
     private String city;
